@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h2, p{
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+};
+
+main {
+    display: flex;
+}
+
+.card-container {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    margin-block: 2rem;
+    max-width: 22rem;
+}
+
+.card-container img {
+    border-radius: 1.5rem;
+    margin: auto;
+    padding: 1.125rem;
+}
+
+.card-info h2 {
+    color: hsl(218, 44%, 22%);
+}
+
+.card-info p{
+    color: hsl(220, 15%, 55%);
+    margin-block: 1rem;
+}
